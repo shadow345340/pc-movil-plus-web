@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PCMOVILPLUS | Soporte Técnico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>PCMOVILPLUS</h1>
+        <p>Servicio Técnico en Caracas</p>
+    </header>
+    <main style="padding: 20px; max-width: 600px; margin: auto;">
+        <form action="/enviar_correo" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" name="nombre" placeholder="Nombre de tu abuelo verá esto" required>
+            <input type="text" name="contacto" placeholder="Tu teléfono o email" required>
+            <input type="text" name="equipo" placeholder="Ej: Samsung A54" required>
+            <textarea name="falla" placeholder="¿Qué le pasa al equipo?" rows="5" required></textarea>
+            <button type="submit" style="background: #00ff62; padding: 10px; cursor: pointer; font-weight: bold;">ENVIAR PEDIDO POR CORREO</button>
+        </form>
+    </main>
+</body>
+</html>
