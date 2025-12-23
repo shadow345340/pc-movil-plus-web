@@ -1,1 +1,3 @@
-flask\npython-dotenv\ngunicorn
+flask
+python-dotenv
+gunicorn
